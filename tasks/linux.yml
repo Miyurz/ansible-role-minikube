@@ -1,10 +1,7 @@
 ---
 - name: Installing minikube on Linux
-  command: Installing minikube on Linux
-
-- name: Download minikube
+  become: true
   get_url:
-    become: true
     url: "https://storage.googleapis.com/minikube/releases/{{ minikube_version }}/minikube-linux-amd64"
     dest: /usr/local/bin/minikube
     mode: 755
