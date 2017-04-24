@@ -1,7 +1,7 @@
 galaxy_info:
   author: Mayur Nagekar
-  description: DevOps
-  company: 
+  description: Bootstrap the node with minikube for tetsing local k8s cluster
+  company: DevOps Evangelist and hacker. Love ansibling.
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -38,8 +38,11 @@ galaxy_info:
         - all
     - name: Ubuntu
       versions:
+        - xenial
+    - name: MacOSX
+      versions:
         - all
-    - name: Mac
+    - name: Darwin
       versions:
         - all
 
