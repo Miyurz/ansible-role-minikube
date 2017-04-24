@@ -1,2 +1,9 @@
 ---
-# tasks file for minikube
+
+- include: linux.yml
+  when: ansible_os_family == 'Debian' or ansible_os_family == 'Redhat'
+  tags: package
+
+- include: darwin.yml
+  when: ansible_os_family == 'Darwin'
+  tags: package
